@@ -3,7 +3,9 @@ import './style.css'
 // import Icon from './icon.png'
 // import Data from './data.xml'
 import printMe from './print.js'
-import { cube } from './math.js'
+import {
+  cube
+} from './math.js'
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode')
@@ -53,4 +55,8 @@ if (module.hot) {
     element = component() // Re-render the "component" to update the click handler
     document.body.appendChild(element)
   })
+}
+
+export default () => {
+  console.log('webpack zero config works')
 }

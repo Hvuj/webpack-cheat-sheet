@@ -18,12 +18,15 @@
   "author": "Hvuj",
   "license": "ISC",
   "devDependencies": {
-    "babel-minify-webpack-plugin": "^0.3.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.6.0",
     "csv-loader": "^3.0.3",
     "express": "^4.17.1",
     "file-loader": "^6.0.0",
+    "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
     "mini-css-extract-plugin": "^0.9.0",
     "style-loader": "^1.2.1",
@@ -36,5 +39,10 @@
   },
   "dependencies": {
     "lodash": "^4.17.15"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
   }
 }

@@ -1,4 +1,4 @@
-// // webpack.config.js
+// webpack.config.js
 // const MinifyPlugin = require("babel-minify-webpack-plugin");
 // module.exports = {
 //   entry: //...,
